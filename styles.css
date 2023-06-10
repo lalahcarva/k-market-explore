@@ -1,0 +1,32 @@
+:root {
+    --blue: #01AAFD;
+    --yellow: #F3BA37;
+    --red: #FF4223;
+    --pink: #FE98B2; 
+  }
+
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* resets */
+
+*  {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* styles */
+
+.menu {
+    background-color: var(--yellow);
+    padding: 10px;
+}
