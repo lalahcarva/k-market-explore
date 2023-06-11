@@ -12,8 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-<link href="../styles.css" rel="stylesheet">
 <link href="home-styles.css" rel="stylesheet">
+<link href="../styles.css" rel="stylesheet">
 
 </head>
 
@@ -22,7 +22,7 @@
     <header class="bg-custom">
         <nav class="navbar navbar-expand-lg navbar-light">
             <menu class="container-fluid">
-              <a class="navbar-brand" href= "../03-Explore/explore.html">KENGSTON EXPLORER</a>
+              <a class="navbar-brand" href= "../01-Home/index.html">KENSINGTON EXPLORER</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,10 +30,13 @@
                 <div class="navbar-nav" aria-label="menu links">
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav" aria-label="menu links">
-                  <a id="nav-link" href="../01-Home/home-styles.css">HOME</a>
+                  <a id="nav-link" href="../01-Home/index.html">HOME</a>
                   <a id="nav-link" href="../03-Explore/explore.html">EXPLORE</a>
                   <a id="nav-link" href="../02-About/">ABOUT</a>
-              </div>
+                  <a id="nav-link" style="color:  #FF4223;" href="../03-Explore/explore.html">SIGN UP</a>
+                  <a id="nav-link" style="color:  #FF4223;" href="../02-About/">LOG IN</a>
+                </div>
+              
               </div>
               </div>
             </menu>
@@ -68,15 +71,19 @@
             <div class="row align-items-center">
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="../Assets/01-Home/img2.jpg" class="card-img-top" alt="...">
+                    <a href="/04-Food/food.html">
+                      <img src="../Assets/01-Home/img2.jpg" class="card-img-top img-hover" alt="...">
+                    </a>
                     <div class="card-body">
-                      <p class="card-text">Cafes & <br> Restaurants</p>
+                      <p class="card-text">Food at<br>Kensington</p>
                     </div>
                   </div>
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="../Assets/01-Home/img3.jpg" class="card-img-top" alt="...">
+                     <a href="/05-Shops/shops.html">
+                       <img src="../Assets/01-Home/img3.jpg" class="card-img-top img-hover" alt="...">
+                    </a>
                     <div class="card-body">
                       <p class="card-text">Vintage <br> Shops</p>
                     </div>
@@ -84,7 +91,9 @@
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="../Assets/01-Home/img4.jpg" class="card-img-top" alt="...">
+                     <a href="/05-Shops/shops.html">
+                         <img src="../Assets/01-Home/img4.jpg" class="card-img-top img-hover" alt="...">
+                     </a>
                     <div class="card-body">
                       <p class="card-text"> Street <br> Art</p>
                     </div>
@@ -97,7 +106,7 @@
 
     <section class="newsletter">
       <div class="tx">
-          <h2 class="title02">NEWESLETTER</h2>
+          <h2 class="title02">NEWSLETTER</h2>
            <P>Sign up to stay up to date with all that’s new on Kensigton Market</P>
       </div>
           <form class="sign-up"> <input id="email" type="text">

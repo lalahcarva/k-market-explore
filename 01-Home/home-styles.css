@@ -27,6 +27,15 @@
 .buttom01:hover{transform: translateY(-8px);
                 background-color: #01AAFD;}
 
+.img-hover:hover {
+        opacity: 80%;
+}
+
+.red {
+       color: #FF4223; 
+       text-decoration: none;
+}
+
 
 .destack{background-color: #01AAFD;
         height: 25vw;
