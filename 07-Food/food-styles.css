@@ -1,0 +1,31 @@
+
+.title{background-color: #FF4223;
+    height: 25vw;
+    border-radius: 0 0 230px 0;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.txtitle{font-weight: 600;
+        font-size: 230%;
+        color: white;}
+
+.card{border:none;
+    border-radius: 0;}
+
+.card-img-top{ border-radius: 0;}
+
+.card-text{color:#FF4223;
+        font-weight: 600;
+        font-size: 130%;
+        
+        text-align:center;}
+
+.text{ text-align:center;
+    font-weight: 600;
+    margin: -5%;}
+
+
