@@ -87,4 +87,720 @@
         "lon2": -79.1132193,
         "lat2": 43.8554414
     }
+},
+
+{
+    "_firestore": {
+        "_delegate": {
+            "app": {
+                "name": "[DEFAULT]",
+                "automaticDataCollectionEnabled": false,
+                "options": {
+                    "apiKey": "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+                    "authDomain": "k-market-exp.firebaseapp.com",
+                    "projectId": "k-market-exp",
+                    "storageBucket": "k-market-exp.appspot.com",
+                    "messagingSenderId": "892090922110",
+                    "appId": "1:892090922110:web:045f05ac8649a55f40142f",
+                    "measurementId": "G-04LPBTT4CQ"
+                }
+            },
+            "databaseId": {
+                "projectId": "k-market-exp",
+                "database": "(default)"
+            },
+            "settings": {
+                "host": "firestore.googleapis.com",
+                "ssl": true,
+                "ignoreUndefinedProperties": false,
+                "cacheSizeBytes": 41943040,
+                "experimentalForceLongPolling": false,
+                "experimentalAutoDetectLongPolling": false,
+                "useFetchStreams": false
+            }
+        },
+        "Zc": {},
+        "INTERNAL": {},
+        "tu": {
+            "name": "[DEFAULT]",
+            "automaticDataCollectionEnabled": false,
+            "options": {
+                "apiKey": "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+                "authDomain": "k-market-exp.firebaseapp.com",
+                "projectId": "k-market-exp",
+                "storageBucket": "k-market-exp.appspot.com",
+                "messagingSenderId": "892090922110",
+                "appId": "1:892090922110:web:045f05ac8649a55f40142f",
+                "measurementId": "G-04LPBTT4CQ"
+            }
+        }
+    },
+    "_delegate": {
+        "_firestore": {
+            "app": {
+                "name": "[DEFAULT]",
+                "automaticDataCollectionEnabled": false,
+                "options": {
+                    "apiKey": "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+                    "authDomain": "k-market-exp.firebaseapp.com",
+                    "projectId": "k-market-exp",
+                    "storageBucket": "k-market-exp.appspot.com",
+                    "messagingSenderId": "892090922110",
+                    "appId": "1:892090922110:web:045f05ac8649a55f40142f",
+                    "measurementId": "G-04LPBTT4CQ"
+                }
+            },
+            "databaseId": {
+                "projectId": "k-market-exp",
+                "database": "(default)"
+            },
+            "settings": {
+                "host": "firestore.googleapis.com",
+                "ssl": true,
+                "ignoreUndefinedProperties": false,
+                "cacheSizeBytes": 41943040,
+                "experimentalForceLongPolling": false,
+                "experimentalAutoDetectLongPolling": false,
+                "useFetchStreams": false
+            }
+        },
+        "_userDataWriter": {
+            "firestore": {
+                "_delegate": {
+                    "app": {
+                        "name": "[DEFAULT]",
+                        "automaticDataCollectionEnabled": false,
+                        "options": {
+                            "apiKey": "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+                            "authDomain": "k-market-exp.firebaseapp.com",
+                            "projectId": "k-market-exp",
+                            "storageBucket": "k-market-exp.appspot.com",
+                            "messagingSenderId": "892090922110",
+                            "appId": "1:892090922110:web:045f05ac8649a55f40142f",
+                            "measurementId": "G-04LPBTT4CQ"
+                        }
+                    },
+                    "databaseId": {
+                        "projectId": "k-market-exp",
+                        "database": "(default)"
+                    },
+                    "settings": {
+                        "host": "firestore.googleapis.com",
+                        "ssl": true,
+                        "ignoreUndefinedProperties": false,
+                        "cacheSizeBytes": 41943040,
+                        "experimentalForceLongPolling": false,
+                        "experimentalAutoDetectLongPolling": false,
+                        "useFetchStreams": false
+                    }
+                },
+                "Zc": {},
+                "INTERNAL": {},
+                "tu": {
+                    "name": "[DEFAULT]",
+                    "automaticDataCollectionEnabled": false,
+                    "options": {
+                        "apiKey": "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+                        "authDomain": "k-market-exp.firebaseapp.com",
+                        "projectId": "k-market-exp",
+                        "storageBucket": "k-market-exp.appspot.com",
+                        "messagingSenderId": "892090922110",
+                        "appId": "1:892090922110:web:045f05ac8649a55f40142f",
+                        "measurementId": "G-04LPBTT4CQ"
+                    }
+                }
+            }
+        },
+        "_snapshot": {
+            "query": {
+                "path": {
+                    "segments": [
+                        "places"
+                    ],
+                    "offset": 0,
+                    "len": 1
+                },
+                "collectionGroup": null,
+                "explicitOrderBy": [],
+                "filters": [],
+                "limit": null,
+                "limitType": "F",
+                "startAt": null,
+                "endAt": null,
+                "p": [
+                    {
+                        "field": {
+                            "segments": [
+                                "__name__"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "dir": "asc"
+                    }
+                ],
+                "T": {
+                    "path": {
+                        "segments": [
+                            "places"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "collectionGroup": null,
+                    "orderBy": [
+                        {
+                            "field": {
+                                "segments": [
+                                    "__name__"
+                                ],
+                                "offset": 0,
+                                "len": 1
+                            },
+                            "dir": "asc"
+                        }
+                    ],
+                    "filters": [],
+                    "limit": null,
+                    "startAt": null,
+                    "endAt": null,
+                    "h": "places|f:|ob:__name__asc"
+                }
+            },
+            "docs": {
+                "keyedMap": {
+                    "root": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "k-market-exp",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "places",
+                                    "eGgFiNKgbekHlXzSZ4JR"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "value": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "k-market-exp",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "places",
+                                        "eGgFiNKgbekHlXzSZ4JR"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "documentType": 1,
+                            "version": {
+                                "timestamp": {
+                                    "seconds": 1686553389,
+                                    "nanoseconds": 698437000
+                                }
+                            },
+                            "data": {
+                                "value": {
+                                    "mapValue": {
+                                        "fields": {
+                                            "description": {
+                                                "stringValue": "Adicionando descrição teste de novo lucar"
+                                            },
+                                            "imageUrl": {
+                                                "stringValue": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FeGgFiNKgbekHlXzSZ4JR.jpeg?alt=media&token=132c34ba-2e8f-4e27-a0ea-c9e2124f7fb3"
+                                            },
+                                            "address": {
+                                                "stringValue": "Dundas Street, Hamilton, ON L9H 4C4, Canada"
+                                            },
+                                            "lat": {
+                                                "doubleValue": 43.2650906
+                                            },
+                                            "lon": {
+                                                "doubleValue": -79.9445918
+                                            },
+                                            "category": {
+                                                "stringValue": "Shops"
+                                            },
+                                            "name": {
+                                                "stringValue": "Place Name 02"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "documentState": 0
+                        },
+                        "color": false,
+                        "left": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "k-market-exp",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "places",
+                                        "Atv35rWEeD9wMGYwL9qD"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "value": {
+                                "key": {
+                                    "path": {
+                                        "segments": [
+                                            "projects",
+                                            "k-market-exp",
+                                            "databases",
+                                            "(default)",
+                                            "documents",
+                                            "places",
+                                            "Atv35rWEeD9wMGYwL9qD"
+                                        ],
+                                        "offset": 5,
+                                        "len": 2
+                                    }
+                                },
+                                "documentType": 1,
+                                "version": {
+                                    "timestamp": {
+                                        "seconds": 1686553760,
+                                        "nanoseconds": 713499000
+                                    }
+                                },
+                                "data": {
+                                    "value": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "imageUrl": {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FAtv35rWEeD9wMGYwL9qD.jpg?alt=media&token=f92a6edb-77ef-4bd8-b002-330c7dd1d727"
+                                                },
+                                                "lat": {
+                                                    "doubleValue": 33.2393864
+                                                },
+                                                "description": {
+                                                    "stringValue": "teadgfasdfasdfasdrfa"
+                                                },
+                                                "address": {
+                                                    "stringValue": "Oita, Oita Prefecture, Japan"
+                                                },
+                                                "name": {
+                                                    "stringValue": "initFireBase test"
+                                                },
+                                                "lon": {
+                                                    "doubleValue": 131.6096524
+                                                },
+                                                "category": {
+                                                    "stringValue": "Architecture"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "documentState": 0
+                            },
+                            "color": true,
+                            "left": {
+                                "size": 0
+                            },
+                            "right": {
+                                "size": 0
+                            },
+                            "size": 1
+                        },
+                        "right": {
+                            "size": 0
+                        },
+                        "size": 2
+                    }
+                },
+                "sortedSet": {
+                    "root": {
+                        "key": {
+                            "key": {
+                                "path": {
+                                    "segments": [
+                                        "projects",
+                                        "k-market-exp",
+                                        "databases",
+                                        "(default)",
+                                        "documents",
+                                        "places",
+                                        "eGgFiNKgbekHlXzSZ4JR"
+                                    ],
+                                    "offset": 5,
+                                    "len": 2
+                                }
+                            },
+                            "documentType": 1,
+                            "version": {
+                                "timestamp": {
+                                    "seconds": 1686553389,
+                                    "nanoseconds": 698437000
+                                }
+                            },
+                            "data": {
+                                "value": {
+                                    "mapValue": {
+                                        "fields": {
+                                            "description": {
+                                                "stringValue": "Adicionando descrição teste de novo lucar"
+                                            },
+                                            "imageUrl": {
+                                                "stringValue": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FeGgFiNKgbekHlXzSZ4JR.jpeg?alt=media&token=132c34ba-2e8f-4e27-a0ea-c9e2124f7fb3"
+                                            },
+                                            "address": {
+                                                "stringValue": "Dundas Street, Hamilton, ON L9H 4C4, Canada"
+                                            },
+                                            "lat": {
+                                                "doubleValue": 43.2650906
+                                            },
+                                            "lon": {
+                                                "doubleValue": -79.9445918
+                                            },
+                                            "category": {
+                                                "stringValue": "Shops"
+                                            },
+                                            "name": {
+                                                "stringValue": "Place Name 02"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "documentState": 0
+                        },
+                        "value": null,
+                        "color": false,
+                        "left": {
+                            "key": {
+                                "key": {
+                                    "path": {
+                                        "segments": [
+                                            "projects",
+                                            "k-market-exp",
+                                            "databases",
+                                            "(default)",
+                                            "documents",
+                                            "places",
+                                            "Atv35rWEeD9wMGYwL9qD"
+                                        ],
+                                        "offset": 5,
+                                        "len": 2
+                                    }
+                                },
+                                "documentType": 1,
+                                "version": {
+                                    "timestamp": {
+                                        "seconds": 1686553760,
+                                        "nanoseconds": 713499000
+                                    }
+                                },
+                                "data": {
+                                    "value": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "imageUrl": {
+                                                    "stringValue": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FAtv35rWEeD9wMGYwL9qD.jpg?alt=media&token=f92a6edb-77ef-4bd8-b002-330c7dd1d727"
+                                                },
+                                                "lat": {
+                                                    "doubleValue": 33.2393864
+                                                },
+                                                "description": {
+                                                    "stringValue": "teadgfasdfasdfasdrfa"
+                                                },
+                                                "address": {
+                                                    "stringValue": "Oita, Oita Prefecture, Japan"
+                                                },
+                                                "name": {
+                                                    "stringValue": "initFireBase test"
+                                                },
+                                                "lon": {
+                                                    "doubleValue": 131.6096524
+                                                },
+                                                "category": {
+                                                    "stringValue": "Architecture"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "documentState": 0
+                            },
+                            "value": null,
+                            "color": true,
+                            "left": {
+                                "size": 0
+                            },
+                            "right": {
+                                "size": 0
+                            },
+                            "size": 1
+                        },
+                        "right": {
+                            "size": 0
+                        },
+                        "size": 2
+                    }
+                }
+            },
+            "oldDocs": {
+                "keyedMap": {
+                    "root": {
+                        "size": 0
+                    }
+                },
+                "sortedSet": {
+                    "root": {
+                        "size": 0
+                    }
+                }
+            },
+            "docChanges": [
+                {
+                    "type": 0,
+                    "doc": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "k-market-exp",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "places",
+                                    "Atv35rWEeD9wMGYwL9qD"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "documentType": 1,
+                        "version": {
+                            "timestamp": {
+                                "seconds": 1686553760,
+                                "nanoseconds": 713499000
+                            }
+                        },
+                        "data": {
+                            "value": {
+                                "mapValue": {
+                                    "fields": {
+                                        "imageUrl": {
+                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FAtv35rWEeD9wMGYwL9qD.jpg?alt=media&token=f92a6edb-77ef-4bd8-b002-330c7dd1d727"
+                                        },
+                                        "lat": {
+                                            "doubleValue": 33.2393864
+                                        },
+                                        "description": {
+                                            "stringValue": "teadgfasdfasdfasdrfa"
+                                        },
+                                        "address": {
+                                            "stringValue": "Oita, Oita Prefecture, Japan"
+                                        },
+                                        "name": {
+                                            "stringValue": "initFireBase test"
+                                        },
+                                        "lon": {
+                                            "doubleValue": 131.6096524
+                                        },
+                                        "category": {
+                                            "stringValue": "Architecture"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "documentState": 0
+                    }
+                },
+                {
+                    "type": 0,
+                    "doc": {
+                        "key": {
+                            "path": {
+                                "segments": [
+                                    "projects",
+                                    "k-market-exp",
+                                    "databases",
+                                    "(default)",
+                                    "documents",
+                                    "places",
+                                    "eGgFiNKgbekHlXzSZ4JR"
+                                ],
+                                "offset": 5,
+                                "len": 2
+                            }
+                        },
+                        "documentType": 1,
+                        "version": {
+                            "timestamp": {
+                                "seconds": 1686553389,
+                                "nanoseconds": 698437000
+                            }
+                        },
+                        "data": {
+                            "value": {
+                                "mapValue": {
+                                    "fields": {
+                                        "description": {
+                                            "stringValue": "Adicionando descrição teste de novo lucar"
+                                        },
+                                        "imageUrl": {
+                                            "stringValue": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FeGgFiNKgbekHlXzSZ4JR.jpeg?alt=media&token=132c34ba-2e8f-4e27-a0ea-c9e2124f7fb3"
+                                        },
+                                        "address": {
+                                            "stringValue": "Dundas Street, Hamilton, ON L9H 4C4, Canada"
+                                        },
+                                        "lat": {
+                                            "doubleValue": 43.2650906
+                                        },
+                                        "lon": {
+                                            "doubleValue": -79.9445918
+                                        },
+                                        "category": {
+                                            "stringValue": "Shops"
+                                        },
+                                        "name": {
+                                            "stringValue": "Place Name 02"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "documentState": 0
+                    }
+                }
+            ],
+            "mutatedKeys": {
+                "data": {
+                    "root": {
+                        "size": 0
+                    }
+                }
+            },
+            "fromCache": false,
+            "syncStateChanged": true,
+            "excludesMetadataChanges": false
+        },
+        "metadata": {
+            "hasPendingWrites": false,
+            "fromCache": false
+        },
+        "query": {
+            "converter": null,
+            "_query": {
+                "path": {
+                    "segments": [
+                        "places"
+                    ],
+                    "offset": 0,
+                    "len": 1
+                },
+                "collectionGroup": null,
+                "explicitOrderBy": [],
+                "filters": [],
+                "limit": null,
+                "limitType": "F",
+                "startAt": null,
+                "endAt": null,
+                "p": [
+                    {
+                        "field": {
+                            "segments": [
+                                "__name__"
+                            ],
+                            "offset": 0,
+                            "len": 1
+                        },
+                        "dir": "asc"
+                    }
+                ],
+                "T": {
+                    "path": {
+                        "segments": [
+                            "places"
+                        ],
+                        "offset": 0,
+                        "len": 1
+                    },
+                    "collectionGroup": null,
+                    "orderBy": [
+                        {
+                            "field": {
+                                "segments": [
+                                    "__name__"
+                                ],
+                                "offset": 0,
+                                "len": 1
+                            },
+                            "dir": "asc"
+                        }
+                    ],
+                    "filters": [],
+                    "limit": null,
+                    "startAt": null,
+                    "endAt": null,
+                    "h": "places|f:|ob:__name__asc"
+                }
+            },
+            "type": "collection",
+            "firestore": {
+                "app": {
+                    "name": "[DEFAULT]",
+                    "automaticDataCollectionEnabled": false,
+                    "options": {
+                        "apiKey": "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+                        "authDomain": "k-market-exp.firebaseapp.com",
+                        "projectId": "k-market-exp",
+                        "storageBucket": "k-market-exp.appspot.com",
+                        "messagingSenderId": "892090922110",
+                        "appId": "1:892090922110:web:045f05ac8649a55f40142f",
+                        "measurementId": "G-04LPBTT4CQ"
+                    }
+                },
+                "databaseId": {
+                    "projectId": "k-market-exp",
+                    "database": "(default)"
+                },
+                "settings": {
+                    "host": "firestore.googleapis.com",
+                    "ssl": true,
+                    "ignoreUndefinedProperties": false,
+                    "cacheSizeBytes": 41943040,
+                    "experimentalForceLongPolling": false,
+                    "experimentalAutoDetectLongPolling": false,
+                    "useFetchStreams": false
+                }
+            },
+            "_path": {
+                "segments": [
+                    "places"
+                ],
+                "offset": 0,
+                "len": 1
+            }
+        }
+    }
+},
+
+{
+    "name": "initFireBase test",
+    "lon": 131.6096524,
+    "category": "Architecture",
+    "address": "Oita, Oita Prefecture, Japan",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/k-market-exp.appspot.com/o/places-gallery%2FAtv35rWEeD9wMGYwL9qD.jpg?alt=media&token=f92a6edb-77ef-4bd8-b002-330c7dd1d727",
+    "lat": 33.2393864,
+    "description": "teadgfasdfasdfasdrfa"
 }]
