@@ -1,0 +1,90 @@
+[{
+    "datasource": {
+        "sourcename": "openstreetmap",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "Open Database License",
+        "url": "https://www.openstreetmap.org/copyright"
+    },
+    "name": "Rua Heitor",
+    "country": "Brazil",
+    "country_code": "br",
+    "region": "Southeast Region",
+    "state": "São Paulo",
+    "state_district": "Região Geográfica Intermediária de São Paulo",
+    "county": "Região Metropolitana de São Paulo",
+    "city": "São Paulo",
+    "municipality": "Região Imediata de São Paulo",
+    "postcode": "08210-090",
+    "suburb": "Itaquera",
+    "quarter": "Vila Carmosina",
+    "street": "Rua Heitor",
+    "lon": -46.4567359,
+    "lat": -23.5402747,
+    "state_code": "SP",
+    "formatted": "Rua Heitor, Itaquera, São Paulo - SP, 08210-090, Brazil",
+    "address_line1": "Rua Heitor",
+    "address_line2": "Itaquera, São Paulo - SP, 08210-090, Brazil",
+    "timezone": {
+        "name": "America/Sao_Paulo",
+        "offset_STD": "-03:00",
+        "offset_STD_seconds": -10800,
+        "offset_DST": "-03:00",
+        "offset_DST_seconds": -10800
+    },
+    "result_type": "street",
+    "rank": {
+        "importance": 0.30000999999999994,
+        "confidence": 1,
+        "match_type": "full_match"
+    },
+    "place_id": "515eb46c52763a47c059315b57714f8a37c0f00102f901897faf3600000000c0020492030a52756120486569746f72",
+    "bbox": {
+        "lon1": -46.4567359,
+        "lat1": -23.5403603,
+        "lon2": -46.4565912,
+        "lat2": -23.5402747
+    }
+},
+{
+    "datasource": {
+        "sourcename": "openstreetmap",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "Open Database License",
+        "url": "https://www.openstreetmap.org/copyright"
+    },
+    "country": "Canada",
+    "country_code": "ca",
+    "state": "Ontario",
+    "county": "Golden Horseshoe",
+    "city": "Toronto",
+    "lon": -79.3839347,
+    "lat": 43.6534817,
+    "state_code": "ON",
+    "formatted": "Toronto, ON, Canada",
+    "address_line1": "Toronto, ON",
+    "address_line2": "Canada",
+    "category": "administrative",
+    "timezone": {
+        "name": "America/Toronto",
+        "offset_STD": "-05:00",
+        "offset_STD_seconds": -18000,
+        "offset_DST": "-04:00",
+        "offset_DST_seconds": -14400,
+        "abbreviation_STD": "EST",
+        "abbreviation_DST": "EDT"
+    },
+    "result_type": "city",
+    "rank": {
+        "importance": 0.8130149417022804,
+        "confidence": 1,
+        "confidence_city_level": 1,
+        "match_type": "full_match"
+    },
+    "place_id": "512c13d96292d853c0596a04d149a5d34540f00101f90173f2040000000000c00208",
+    "bbox": {
+        "lon1": -79.6392832,
+        "lat1": 43.5796082,
+        "lon2": -79.1132193,
+        "lat2": 43.8554414
+    }
+}]
