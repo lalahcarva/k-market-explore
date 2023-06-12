@@ -1,7 +1,109 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyDzB0yBCUGpNhahLm2Ar_y4VSte2n60fqo",
+    authDomain: "k-market-exp.firebaseapp.com",
+    projectId: "k-market-exp",
+    storageBucket: "k-market-exp.appspot.com",
+    messagingSenderId: "892090922110",
+    appId: "1:892090922110:web:045f05ac8649a55f40142f",
+    measurementId: "G-04LPBTT4CQ",
+};
+
+// // Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+
+// const analytics = getAnalytics(app);
+
 //const newPlaceFormEl = document.getElementById("new-place-form");
+const newPlaceNameEl = document.getElementById("input-name");
+const newPlaceDescriptionEl = document.getElementById("new-place-description");
+const newPlaceGategoryEl = document.getElementById("input-category");
+
+const db = app.firestore();
+const storage = app.storage();
+
+const FbStorageBucket = "places-gallery";
+
+let fileToUpload = {
+    file: {},
+    fileName: "",
+    extension: "",
+};
+
+$("#upload-file").on("change", function (e) {
+    console.log("e", e.target.files[0]);
+
+    fileToUpload.file = e.target.files[0];
+    fileToUpload.fileName = fileToUpload.file.name.split(".").shift();
+    fileToUpload.extension = fileToUpload.file.name.split(".").pop();
+
+    console.log("Address: ", document.getElementById("input-address").value);
+
+    console.log(e.target.files[0].name);
+
+    let imgEl = document.createElement("img");
+    imgEl.setAttribute("src", URL.createObjectURL(e.target.files[0]));
+
+    document.getElementById("image-test").appendChild(imgEl);
+
+    //imageName.value = filename;
+});
 
 $("#new-place-form").on("submit", function (event) {
     event.preventDefault();
+
+    const placeLocation = JSON.parse(localStorage.getItem("newAddress"));
+
+    const newPlaceInfo = {
+        name: newPlaceNameEl.value,
+        description: newPlaceDescriptionEl.value,
+        address: placeLocation.formattedAddress,
+        category: newPlaceGategoryEl.value,
+        lon: placeLocation.lon,
+        lat: placeLocation.lat,
+        imageUrl: fileToUpload.fileName ? fileToUpload.file.name : "",
+    };
+
+    console.log(newPlaceInfo);
+
+    if (fileToUpload.fileName) {
+        const id = db.collection("places").doc().id;
+
+        const storageRef = storage.ref(
+            `${FbStorageBucket}/${id}.${fileToUpload.extension}`
+        );
+        const uploadTask = storageRef.put(fileToUpload.file);
+
+        uploadTask.on(
+            "state_changed",
+            function (snapshot) {
+                let progressVal =
+                    (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                console.log("Progress: ", progressVal, "% / 100%");
+                //progress.value = progressVal;
+            },
+            function (err) {
+                console.log("error:", err);
+            },
+            function () {
+                console.log("Upload is done");
+                uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+                    newPlaceInfo.imageUrl = downloadURL;
+                    db.collection("places")
+                        .doc(id)
+                        .set(newPlaceInfo)
+                        .then(() => {
+                            console.log("Document added");
+                            fileToUpload.file = {};
+                            fileToUpload.fileName = "";
+                            fileToUpload.extension = "";
+                            imageName.value = "";
+                            //createGallery();
+                        })
+                        .catch((err) => console.log("err", err));
+                });
+            }
+        );
+    }
 });
 
 function addressAutocomplete(containerElement, callback, options) {
@@ -264,6 +366,18 @@ addressAutocomplete(
     (data) => {
         console.log("Selected option: ");
         console.log(data);
+
+        let newAddress = {
+            formattedAddress: data.formatted,
+            state: data.state,
+            country: data.country,
+            lon: data.lon,
+            lat: data.lat,
+        };
+
+        console.log("New Address: ", newAddress);
+
+        localStorage.setItem("newAddress", JSON.stringify(newAddress));
     },
     {
         placeholder: "Enter an address here",
