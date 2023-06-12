@@ -1,0 +1,38 @@
+:root {
+    --blue: #01AAFD;
+    --yellow: #F3BA37;
+    --red: #FF4223;
+    --pink: #FE98B2; 
+  }
+
+  /* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+.banner-title {
+    background-color: var(--blue);
+    height: 30vh;
+    border-radius: 0 0 100px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.about-text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-img {
+    width: 100%;
+}
