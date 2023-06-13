@@ -10,14 +10,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 
-.banner-title {
-    background-color: var(--blue);
-    height: 30vh;
-    border-radius: 0 0 100px 0;
+
+
+.title{
+    background-color:var(--blue);
+    height: 20vw;
+    border-radius: 0 0 180px 0;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -10px;
+    align-items: center;
     display: flex;
-    align-items: center; 
     justify-content: center;
-}
+    align-items: center;}
+
+.txtitle{font-weight: 600;
+        font-size: 230%;
+        color: white;}
 
 h2 {
     font-family: 'Inter', sans-serif;
