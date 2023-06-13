@@ -83,7 +83,7 @@
 }
 
 .map-container {
-    width: 98%;
+    width: 100%;
     height: 100%;
     margin: 0;
 }
@@ -96,4 +96,9 @@
 
 .modal-top-image-container{
     width: 400px;
+}
+
+.button-modal{
+    border: none;
+    background-color: white;
 }

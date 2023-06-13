@@ -12,20 +12,20 @@ let fileToUpload = {
 };
 
 $("#upload-file").on("change", function (e) {
-    console.log("e", e.target.files[0]);
+    //console.log("e", e.target.files[0]);
 
     fileToUpload.file = e.target.files[0];
     fileToUpload.fileName = fileToUpload.file.name.split(".").shift();
     fileToUpload.extension = fileToUpload.file.name.split(".").pop();
 
-    console.log("Address: ", document.getElementById("input-address").value);
+    // console.log("Address: ", document.getElementById("input-address").value);
 
-    console.log(e.target.files[0].name);
+    // console.log(e.target.files[0].name);
 
-    let imgEl = document.createElement("img");
-    imgEl.setAttribute("src", URL.createObjectURL(e.target.files[0]));
+    // let imgEl = document.createElement("img");
+    // imgEl.setAttribute("src", URL.createObjectURL(e.target.files[0]));
 
-    document.getElementById("image-test").appendChild(imgEl);
+    // document.getElementById("image-test").appendChild(imgEl);
 
     //imageName.value = filename;
 });
@@ -79,9 +79,22 @@ $("#new-place-form").on("submit", function (event) {
                             fileToUpload.fileName = "";
                             fileToUpload.extension = "";
                             imageName.value = "";
-                            //createGallery();
+
+                            newPlaceNameEl.value = "";
+                            newPlaceDescriptionEl.value = "";
+                            document.getElementById(
+                                "input-address-container"
+                            ).value = "";
                         })
-                        .catch((err) => console.log("err", err));
+                        .catch((err) => {
+                            console.log("err", err);
+
+                            newPlaceNameEl.value = "";
+                            newPlaceDescriptionEl.value = "";
+                            document.getElementById(
+                                "input-address-container"
+                            ).value = "";
+                        });
                 });
             }
         );

@@ -1,4 +1,6 @@
 const MAX_ROW_CARDS = 3;
+const SHOP_CATEGORY = "Shops";
+
 const myAPIKey = "b8a51b31d53b47fd8ead7b6a55a93efb";
 var rowCounter = 0;
 // var mapIndex = 0;
@@ -64,6 +66,7 @@ function createPlaceCard(dbItem, id) {
     modalButton.setAttribute("type", "button");
     modalButton.setAttribute("data-toggle", "modal");
     modalButton.setAttribute("data-target", "#" + id);
+    modalButton.setAttribute("class", "button-modal");
 
     let placeImage = document.createElement("img");
     placeImage.setAttribute("src", dbItem.imageUrl);
@@ -262,25 +265,27 @@ function loadCards() {
             if (snapshot) {
                 let index = 0;
                 snapshot.forEach((element) => {
-                    if (!(rowCounter % MAX_ROW_CARDS)) {
-                        if (rowCounter) {
-                            index++;
+                    if (element.data().category == SHOP_CATEGORY) {
+                        if (!(rowCounter % MAX_ROW_CARDS)) {
+                            if (rowCounter) {
+                                index++;
+                            }
+                            cardRowList[index] = createRowElement();
+                            console.log("NEW ROW");
                         }
-                        cardRowList[index] = createRowElement();
-                        console.log("NEW ROW");
+                        console.log("RowCounter: ", rowCounter);
+                        console.log("CardRowList Index: ", index);
+                        console.log("Snapshot data id: ", element.id);
+                        console.log("Snapshot Element: ", element.data());
+
+                        cardRowList[index].element3.appendChild(
+                            createPlaceCard(element.data(), element.id)
+                        );
+
+                        createPlaceModal(element.data(), element.id);
+
+                        rowCounter++;
                     }
-                    console.log("RowCounter: ", rowCounter);
-                    console.log("CardRowList Index: ", index);
-                    console.log("Snapshot data id: ", element.id);
-                    console.log("Snapshot Element: ", element.data());
-
-                    cardRowList[index].element3.appendChild(
-                        createPlaceCard(element.data(), element.id)
-                    );
-
-                    createPlaceModal(element.data(), element.id);
-
-                    rowCounter++;
                 });
 
                 cardRowList.forEach((element) => {
@@ -293,11 +298,13 @@ function loadCards() {
                 });
 
                 snapshot.forEach((element) => {
-                    createMapElement(
-                        element.id,
-                        element.data().lon,
-                        element.data().lat
-                    );
+                    if (element.data().category == SHOP_CATEGORY) {
+                        createMapElement(
+                            element.id,
+                            element.data().lon,
+                            element.data().lat
+                        );
+                    }
                 });
                 index = 0;
                 rowCounter = 0;
