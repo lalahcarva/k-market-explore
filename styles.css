@@ -62,9 +62,22 @@ header {display: block;}
 
 /*Footer Styles*/
 
-.footer {background-color: #FE98B2;
-        height: 6vw;
-         margin:0;}
+.footer {
+    background-color: #FE98B2;
+    height: 6vw;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.foottext {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-weight: 700;
+    }
+
+
 
          @media only screen and (max-width:625px) {
 

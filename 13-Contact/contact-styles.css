@@ -1,0 +1,52 @@
+:root {
+    --blue: #01AAFD;
+    --yellow: #F3BA37;
+    --red: #FF4223;
+    --pink: #FE98B2; 
+  }
+
+  /* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+
+
+.title{
+    background-color:var(--blue);
+    height: 20vw;
+    border-radius: 0 0 180px 0;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.txtitle{font-weight: 600;
+        font-size: 230%;
+        color: white;}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.about-text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.contact {
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+}
