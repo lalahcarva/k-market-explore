@@ -1,0 +1,56 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5F5;
+  }
+  
+  .title {
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    color: #FF4223;
+  }
+  
+  .contact {
+    margin-top: 50px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact label {
+    font-weight: 600;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact input[type="password"],
+  .contact select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact input[type="file"] {
+    margin-bottom: 30px;
+  }
+  
+  .contact button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF4223;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .contact button[type="submit"]:hover {
+    background-color: #01AAFD;
+  }

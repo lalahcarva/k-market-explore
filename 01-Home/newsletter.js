@@ -14,6 +14,8 @@ function sendMail(email) {
     <p>Thank you for signing up to our newsletter.</p>
     <p><strong>Kensington Explorer</strong></p>`;
 
+    console.log("email", email);
+
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: envVars.MY_EMAIL,
@@ -22,5 +24,9 @@ function sendMail(email) {
         From: envVars.MY_EMAIL,
         Subject: "Kensington Explorer Newsletter",
         Body: emailBody,
-    }).then((message) => alert(message));
+    })
+        .then((message) => alert(message))
+        .catch((err) => {
+            console.log("error", err);
+        });
 }
