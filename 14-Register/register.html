@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kensigton Market</title>
+
+    <!--Bootstrap link must go above my overrides-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link href="register-styles.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="title">
+        <h2 class="txtitle">REGISTER</h2>
+    </section>
+
+
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="col-8">
+                <form id="register-form">
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">First name:</label>
+                        <input type="text" class="form-control" placeholder="First name" name="First Name" id="form-first-name" required>
+                     <br></div>
+
+                    <div class="mb-3">
+                        <label for="LastName" class="form-label">Last name:</label>
+                        <input type="text" class="form-control" placeholder="Last name" name="Last Name" id="form-last-name"
+                           required> <br> 
+                    </div>
+
+                    <div>
+                        <label for="age">Age:</label>
+                        <input id="form-age" type="range" value="25" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+                        <output>25</output> <br> 
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-group">
+                            <label for="input-category">Occupation:</label>
+                            <select class="form-control" id="form-occupation">
+                                <option>Healthcare practioners and support</option>
+                                <option>Computer and mathematical</option>
+                                <option>Sales</option>
+                                <option>Architecture and engineering</option>
+                                <option>Construction and extraction</option>
+                                <option>Management</option>
+                                <option>Life, physical and social science</option>
+                                <option>Arts, design, entertainement, sports and media</option>
+                                <option>Business and financial operations</option>
+                                <option>Community and social service</option>
+                                <option>Food preparation and service</option>
+                                <option>Legal</option>
+                                <option>Production</option>
+                                <option>Transportation</option>
+                                <option>Protective service</option>
+                                <option>Building and grounds cleaning</option>
+                                <option>Farming, fishing and forestry</option>
+                                <option>Student</option>
+                                <option>Retired</option>
+                                <option>Unemployed</option>
+                            </select>
+                        </div> <br> <br>
+                    </div>
+
+                    <div>
+                        <label for="birthday">Date of birth:</label>
+
+                        <input type="date" id="form-date-of-birth" name="date-of-birth"
+                            value="2018-07-22"
+                            min="1910-01-01" max="2013-01-01"> <br> <br>
+                    </div>
+                    
+
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" placeholder="Your email address" name="Email"
+                            id="form-email" required> <br> <br>
+                    </div>
+
+                    <div>
+                        <label for="pass">Password (8 characters minimum):</label>
+                        <input type="password" id="form-password" name="password"
+                            minlength="8" required> <br> <br> <br>
+                    </div>
+
+                    <div>
+                        <label for="image">Image:</label>
+                        <input type="file" name="image" id="form-profile-picture"> <br> <br>
+                    </div>
+                    
+                    
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-warning" type="submit">REGISTER</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <br> <br>
+    <script src="register.js"> </script>
+</body>
